@@ -1,0 +1,278 @@
+@charset "utf-8";
+
+
+*{
+    box-sizing: border-box;
+    font-family: "Noto Sans JP";
+}
+
+
+html {
+    scroll-behavior: smooth;
+   }
+   
+
+body{
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #212121;
+}
+
+h1,h2{
+    margin-top: 0;
+    margin-bottom: 30px;
+    line-height: 1.2;
+}
+
+a{
+    color: #212121;
+    text-decoration: none;
+}
+a:hover{
+    text-decoration: underline;
+    opacity: .5;
+    transition: .5s;
+}
+p{
+    margin: 1em 0;
+    margin-bottom: 1em;
+    font-size: 16px;
+}
+ul{
+    margin: 1em 0;
+    padding: 0;
+    letter-spacing: none;
+}
+figure{
+    margin: 0;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+address{
+    font-style: normal;
+}
+.header{
+    width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+    text-align: right;
+}
+.header-nav ul{
+    list-style: none;
+}
+.header-nav-list li{
+    display: inline-block;
+    margin: 0;
+    border-left: 1px solid #212121;
+}
+.header-nav-list li:first-child{
+    border-left: none;
+}
+.header-nav-list a{
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+
+.logo{
+    margin: 0;
+    width: 250px;
+    position: absolute;
+}
+
+.main{
+    min-width: 1200px;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.top{
+    margin-bottom: 40px;
+}
+.top img{
+    border-radius: 20px;
+}
+
+.nav{
+    margin-bottom: 50px;
+    text-align: center;
+}
+.nav-list li{
+    display: inline-block;
+    margin: 0;
+    border-left: 1px solid #212121;
+}
+.nav-list li:first-child{
+    border-left: none;
+}
+.nav-list a{
+    display: inline-block;
+    padding: 0 15px;
+    line-height: 1.2;
+    text-transform: uppercase;
+}
+.section{
+    margin: 0 auto 100px;
+}
+
+.heading{
+    margin-bottom: 40px;
+    text-align: center;
+}
+.heading img{
+    width: 180px;
+    border-bottom: 1px solid #212121;
+}
+.h2{
+    font-size: 40px;
+    border-bottom: 1px solid #212121;
+    text-align: center;
+}
+
+#about{
+    text-align: center;
+    padding-bottom: 40px;
+    width: 900px;
+    margin: auto;
+    line-height: 2.5;
+    color: #212121;
+}
+
+#menu{
+    padding-bottom: 40px;
+    width: 750px;
+    margin: auto;
+    color: #212121;
+}
+.menu-list{
+    display: flex;
+    justify-content: space-around;
+    line-height: 2.5;
+    font-size: 20px;
+}
+.menu-name{
+    text-align: left;
+    list-style: none;
+}
+.place{
+    text-align: left;
+    list-style: none;
+}
+.place li::before{
+    content: "　・　・　・　・　・　・　";
+}
+
+#beans{
+    text-align: center;
+    margin-bottom: 140px;
+    color: #212121;
+}
+#beans img{
+    max-width: 1200px;
+}
+
+.container{
+    width:1200px;
+    height:auto;
+    position: relative;
+}
+.container img{
+    width:100%;
+    height:auto;
+    border-radius: 20px;
+}
+.beans-products{
+    position: absolute;
+    top:50%;
+    left:60%;
+    transform: translate(-50%,-50%);
+    font-size: 20px;
+    width: 800px;
+    margin-left: 40px;
+    line-height: 2.5;
+    border-left: 2px solid #666;
+    text-align: left;
+    display: flex;
+}
+.beans-name li,
+.beans-place li{
+    list-style: none;
+    padding-left: 40px;
+    font-weight: bold;
+}
+
+#footer{
+    font-size: 14px;
+    line-height: 2;
+    width: 100%;
+}
+.about-us{
+    width: 250px;
+}
+.about-us p{
+    font-size: 12px;
+    width: 210px;
+    line-height: 2;
+}
+.about-us p::before{
+    content: "　";
+}
+.follow-us-on{
+    width: 250px;
+}
+.f-logo img{
+    height: 26px;
+    display: inline-block;
+    align-items: center;
+    margin-right: 4px;
+    transition: .5s;
+}
+.f-logo img:hover{
+    opacity: .5;
+}
+.access{
+    width: 250px;
+    height: 450px;
+}
+.access p{
+    font-size: 14px;
+}
+.opening{
+    width: 250px;
+}
+.opening-list{
+    list-style: none;
+    margin-left: auto;
+    line-height: 2.18;
+}
+.footer-container{
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    border-top: 1px solid #212121;
+    margin-left: auto;
+    margin-right: auto;
+}
+.footer-container h2{
+    margin: 40px 20px 20px 0;
+    padding: 10px 10px 10px 0;
+    font-size: 16px;
+    text-align: left;
+    border-bottom: 1px solid #212121;
+}
+
+.copyright{
+    text-align: center;
+    padding-left: 15px;
+    background-color: #333;
+    color: #fff;
+    margin: auto;
+}
+.copyright small{
+    font-size: 12px;
+}

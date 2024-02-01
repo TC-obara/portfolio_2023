@@ -1,0 +1,16 @@
+@mixin responsive($size){
+    // サイズの指定
+    $width:0;
+    // 幅の指定
+    @if($size == 'lg'){
+        // LGサイズだった場合
+        $width:960px;
+    }
+    @else if($size == 'sm'){
+        // SMサイズだった場合
+        $width:520px;
+    }
+    @media screen and(max-width:$width){
+        @content
+    }
+}
