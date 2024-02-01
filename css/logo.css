@@ -1,0 +1,161 @@
+#logo {
+  width: 50px;
+  aspect-ratio: 1 / 1;
+  position: absolute;
+  box-sizing: border-box;
+  pointer-events: none;
+}
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 800px) {
+  #logo {
+    width: 32px;
+    margin-block: 8px;
+  }
+}
+
+.head {
+  width: 100%;
+  height: 3px;
+  background: #212121;
+  border-radius: 9999px;
+}
+.eyes {
+  width: 60%;
+  height: 30%;
+  display: flex;
+  gap: 5%;
+}
+.eyesWrapper {
+  width: 45%;
+  height: 90%;
+  position: relative;
+}
+.eye {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: none;
+  overflow: hidden;
+
+  animation: animation 8s infinite;
+}
+.eye div {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background: #212121;
+}
+
+.leg {
+  position: absolute;
+  width: 3px;
+  height: 100%;
+  transform: skewX(-15deg);
+  border-radius: 9999px 9999px 0 0;
+  top: 0;
+  left: 50%;
+  background: #212121;
+}
+.foot {
+  width: 40%;
+  height: 20%;
+  position: absolute;
+  bottom: 0;
+  border: solid #212121;
+  border-width: 3px;
+  background: transparent;
+  border-radius: 999px 999px 0 0;
+  box-sizing: border-box;
+}
+
+.rightfoot {
+  width: 45%;
+  height: 45%;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: 3px solid #212121;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+@keyframes animation {
+  0%,
+  19% {
+    top: 0;
+    bottom: 0;
+    background: none;
+    border-radius: 0;
+  }
+  20%,
+  30% {
+    top: 40%;
+    bottom: 40%;
+    background: #212121;
+    border-radius: 100px;
+  }
+  31%,
+  39% {
+    top: 0;
+    bottom: 0;
+    background: none;
+    border-radius: 0;
+  }
+  40%,
+  50% {
+    top: 40%;
+    bottom: 40%;
+    background: #212121;
+    border-radius: 100px;
+  }
+  51%,
+  100% {
+    top: 0;
+    bottom: 0;
+    background: none;
+    border-radius: 0;
+  }
+}
+
+/* カーニング */
+.j {
+  margin-left: min(2.4vw, 34.56px);
+}
+.u {
+  margin-left: max(-4.2vw, -60.48px);
+}
+.n {
+  margin-left: max(-4.4vw, -63.36px);
+}
+.y {
+  margin-left: max(-3.2vw, -46.08px);
+}
+.a {
+  margin-left: max(-4.8vw, -69.12px);
+}
+
+.p {
+  margin-left: min(1.2vw, 17.28px);
+}
+.o {
+  margin-left: max(-3.6vw, -51.84px);
+}
+.r {
+  margin-left: max(-4vw, -57.6px);
+}
+.t {
+  margin-left: max(-3.2vw, -46.08px);
+}
+.f {
+  margin-left: max(-3vw, -43.2px);
+}
+.l {
+  margin-left: max(-4vw, -57.6px);
+}
+.i {
+  margin-left: max(-4vw, -57.6px);
+  margin-right: max(-0.2vw, -2.88px);
+}
